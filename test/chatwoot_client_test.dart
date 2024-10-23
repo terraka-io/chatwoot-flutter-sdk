@@ -20,8 +20,8 @@ void main() {
     final testInboxIdentifier = "testIdentifier";
     final testBaseUrl = "https://testbaseurl.com";
     late ProviderContainer mockProviderContainer;
-    final mockLocalStorage = MockLocalStorage();
-    final mockRepository = MockChatwootRepository();
+    final MockLocalStorage mockLocalStorage = MockLocalStorage();
+    final MockChatwootRepository mockRepository = MockChatwootRepository();
 
     final testUser = ChatwootUser(
         identifier: "identifier",
@@ -41,9 +41,9 @@ void main() {
       mockProviderContainer = ProviderContainer();
       mockProviderContainer.updateOverrides([
         localStorageProvider
-            .overrideWithProvider((ref, param) => mockLocalStorage),
+            .overrideWithProvider(( param) => Provider<MockLocalStorage>((ref) => mockLocalStorage,)),
         chatwootRepositoryProvider
-            .overrideWithProvider((ref, param) => mockRepository)
+            .overrideWithProvider(( param) => Provider<MockChatwootRepository>((ref) => mockRepository,))
       ]);
       ChatwootClient.providerContainerMap.update(
           testClientInstanceKey, (_) => mockProviderContainer,

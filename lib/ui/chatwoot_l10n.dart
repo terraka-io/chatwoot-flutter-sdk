@@ -29,6 +29,17 @@ class ChatwootL10n extends ChatL10n {
   /// Message when agent resolves conversation
   final String conversationResolvedMessage;
 
+   /// Label for the unread messages header.
+  final String unreadMessagesLabel;
+
+  final String isTyping;
+
+  /// Word 'others', currently part of the typing indicator.
+  final String others;
+
+   /// Word 'and', currently part of the typing indicator.
+  final String and;
+
   /// Creates a new chatwoot l10n
   const ChatwootL10n(
       {this.attachmentButtonAccessibilityLabel = "",
@@ -40,12 +51,22 @@ class ChatwootL10n extends ChatL10n {
       this.inputPlaceholder = "Type your message",
       this.sendButtonAccessibilityLabel = "Send Message",
       this.conversationResolvedMessage =
-          "Your ticket has been marked as resolved"})
+          "Your ticket has been marked as resolved",
+      this.and = '',
+      this.isTyping = '',
+      this.others = '',
+      this.unreadMessagesLabel = ''  ,  
+      })
       : super(
             attachmentButtonAccessibilityLabel:
                 attachmentButtonAccessibilityLabel,
             emptyChatPlaceholder: emptyChatPlaceholder,
             fileButtonAccessibilityLabel: fileButtonAccessibilityLabel,
             inputPlaceholder: inputPlaceholder,
-            sendButtonAccessibilityLabel: sendButtonAccessibilityLabel);
+            sendButtonAccessibilityLabel: sendButtonAccessibilityLabel,
+            and: and,
+            isTyping: isTyping,
+            others: others,
+            unreadMessagesLabel: unreadMessagesLabel
+            );
 }
