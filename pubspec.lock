@@ -262,10 +262,11 @@ packages:
   flutter_chat_ui:
     dependency: "direct main"
     description:
-      name: flutter_chat_ui
-      sha256: "168a4231464ad00a17ea5f0813f1b58393bdd4035683ea4dc37bbe26be62891e"
-      url: "https://pub.dev"
-    source: hosted
+      path: "."
+      ref: "9981a263f8c15f5991be21aaee1a88bf78dd864c"
+      resolved-ref: "9981a263f8c15f5991be21aaee1a88bf78dd864c"
+      url: "https://github.com/terraka-io/flutter_chat_ui.git"
+    source: git
     version: "1.6.15"
   flutter_link_previewer:
     dependency: transitive

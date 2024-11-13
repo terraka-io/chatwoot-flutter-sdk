@@ -108,11 +108,11 @@ class ChatwootChatTheme extends ChatTheme {
       fontWeight: FontWeight.w800,
       height: 1.333,
     ),
-     EdgeInsets padding4= const EdgeInsets.all(4),
+    EdgeInsets padding4 = const EdgeInsets.all(4),
     EdgeInsets padding8 = const EdgeInsets.all(8),
     EdgeInsets padding12 = const EdgeInsets.all(12),
     EdgeInsets paddingHorSym8 = const EdgeInsets.symmetric(horizontal: 8),
-    Color inputSurfaceTintColor =  const Color(0xCEF4F6FB),
+    Color inputSurfaceTintColor = const Color(0xCEF4F6FB),
     SystemMessageTheme systemMessageTheme = const SystemMessageTheme(
       margin: EdgeInsets.only(
         bottom: 24,
@@ -149,8 +149,8 @@ class ChatwootChatTheme extends ChatTheme {
         height: 1.333,
       ),
     ),
-    
   }) : super(
+          chatContentMargin: padding8,
           attachmentButtonIcon: attachmentButtonIcon,
           backgroundColor: backgroundColor,
           dateDividerTextStyle: dateDividerTextStyle,
