@@ -263,8 +263,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: "9981a263f8c15f5991be21aaee1a88bf78dd864c"
-      resolved-ref: "9981a263f8c15f5991be21aaee1a88bf78dd864c"
+      ref: "11384b527128ee3b0df19b29dd14316f6aaded92"
+      resolved-ref: "11384b527128ee3b0df19b29dd14316f6aaded92"
       url: "https://github.com/terraka-io/flutter_chat_ui.git"
     source: git
     version: "1.6.15"

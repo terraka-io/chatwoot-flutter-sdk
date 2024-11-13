@@ -13,7 +13,7 @@ dependencies:
   flutter_chat_ui:
     git:
       url: https://github.com/terraka-io/flutter_chat_ui.git
-      ref: 9981a263f8c15f5991be21aaee1a88bf78dd864c
+      ref: 11384b527128ee3b0df19b29dd14316f6aaded92
     # path: ../flutter_chat_ui
   hive: ^2.2.3
   hive_flutter: ^1.1.0
